@@ -1,11 +1,30 @@
-h1, h3  {
+a:hover {
+    opacity: .2;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
     display: flex;
     justify-content: center;
 }
 
+h1, h2 {
+    font-weight: lighter;
+}
+
+h3 {
+    background-color: #3A3D3F;
+    color: #FAFAFA;
+}
+
 
 nav {
-    background-color: #BF1E2E;
+    background-color: #A8A9AD;
+    height: 30px;
+    margin-bottom: 21.44px;
+    width: 100%;
 }
 
 
@@ -16,8 +35,27 @@ nav {
 
 }
 
+.contact-links img  {
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.linkedin {
+    padding-left: 15px;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    border-radius: 80%;
+    margin: auto;
+    width: 30%;
+
+}
 .tech-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 
