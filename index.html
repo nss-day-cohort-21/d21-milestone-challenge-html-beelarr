@@ -14,9 +14,10 @@
             <h2>Dev Display</h2>
             <nav></nav>
             <img class="me" src="img/me.jpg" alt="Photo of me">
+            <h3>BIO</h3>
             <section class="bio">
-                <h3>BIO</h3>
-                <p></p>
+
+
             </section>
         </header>
         <main>
@@ -41,24 +42,12 @@
                </div>
             </section>
 
-            <section class="blog">
+
                 <h3>BLOG</h3>
 
-                <article id="blog_1">
-                    <h4 class="title">Studies</h4>
-                    <p class="copy"></p>
-                    <p>Posted on <time class="date">Jan 1</time>
-                        by Bryon.
-                    </p>
+            <section class="blog">
 
-                </article>
 
-                <article id="blog_2">
-                    <h4 class="title">Future Studies</h4>
-                    <p class="copy"></p>
-                    <p>Posted on <time class="date">July 11</time>
-                        by Bryon.</p>
-                </article>
             </section>
 
             <footer class="contact">
@@ -68,6 +57,107 @@
                     <a class="linkedin" href="https://www.linkedin.com/in/bryon-larrance-663374b4/"><img src="img/linkedin.png" alt="LinkedIn"></a>
                     <a class="email" href="mailto:bryonl@me.com"><img src="img/email.png" alt=""></a>
                 </div>
+
+                    <h3>Find Me</h3>
+                <div id="find-me">
+                    <div id="map"></div>
+
+                </div>
+
+                <script>
+                    function initMap() {
+                        // Styles a map in night mode.
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            center: {lat: 36.126029, lng: -86.719271},
+                            zoom: 8,
+                            styles: [
+                                {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                                {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                                {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+                                {
+                                    featureType: 'administrative.locality',
+                                    elementType: 'labels.text.fill',
+                                    stylers: [{color: '#d59563'}]
+                                },
+                                {
+                                    featureType: 'poi',
+                                    elementType: 'labels.text.fill',
+                                    stylers: [{color: '#d59563'}]
+                                },
+                                {
+                                    featureType: 'poi.park',
+                                    elementType: 'geometry',
+                                    stylers: [{color: '#263c3f'}]
+                                },
+                                {
+                                    featureType: 'poi.park',
+                                    elementType: 'labels.text.fill',
+                                    stylers: [{color: '#6b9a76'}]
+                                },
+                                {
+                                    featureType: 'road',
+                                    elementType: 'geometry',
+                                    stylers: [{color: '#38414e'}]
+                                },
+                                {
+                                    featureType: 'road',
+                                    elementType: 'geometry.stroke',
+                                    stylers: [{color: '#212a37'}]
+                                },
+                                {
+                                    featureType: 'road',
+                                    elementType: 'labels.text.fill',
+                                    stylers: [{color: '#9ca5b3'}]
+                                },
+                                {
+                                    featureType: 'road.highway',
+                                    elementType: 'geometry',
+                                    stylers: [{color: '#746855'}]
+                                },
+                                {
+                                    featureType: 'road.highway',
+                                    elementType: 'geometry.stroke',
+                                    stylers: [{color: '#1f2835'}]
+                                },
+                                {
+                                    featureType: 'road.highway',
+                                    elementType: 'labels.text.fill',
+                                    stylers: [{color: '#f3d19c'}]
+                                },
+                                {
+                                    featureType: 'transit',
+                                    elementType: 'geometry',
+                                    stylers: [{color: '#2f3948'}]
+                                },
+                                {
+                                    featureType: 'transit.station',
+                                    elementType: 'labels.text.fill',
+                                    stylers: [{color: '#d59563'}]
+                                },
+                                {
+                                    featureType: 'water',
+                                    elementType: 'geometry',
+                                    stylers: [{color: '#17263c'}]
+                                },
+                                {
+                                    featureType: 'water',
+                                    elementType: 'labels.text.fill',
+                                    stylers: [{color: '#515c6d'}]
+                                },
+                                {
+                                    featureType: 'water',
+                                    elementType: 'labels.text.stroke',
+                                    stylers: [{color: '#17263c'}]
+                                }
+                            ]
+                        });
+                    }
+                </script>
+
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi0kecWCJKdi2ljnYUzv8j0x4U0MNy5wg&callback=initMap">
+                </script>
+
             </footer>
         </main>
         <script src="js/main.js" type="text/javascript"></script>
